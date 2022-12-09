@@ -32,14 +32,14 @@ class ShowTest {
     void getCancellationWindowInSeconds() {
         Show show = new Show(1234, 26, 3, 120);
 
-        assertEquals(2, show.getCancellationWindowInSeconds());
+        assertEquals(120, show.getCancellationWindowInSeconds());
     }
 
     @Test
     void getCancellationWindowInMinutes() {
         Show show = new Show(1234, 26, 3, 120);
 
-        assertEquals(2, show.getCancellationWindowInSeconds());
+        assertEquals(2, show.getCancellationWindowInMinutes());
     }
 
     @Test
